@@ -28,7 +28,7 @@ const CustomerSupport = () => {
             data-aos="fade-right"
             data-aos-delay="400"
             data-aos-anchor-placement="top-center"
-            className="mt-[1.5rem] mb-[1.5rem] text-black opactity-90 md:text-[16px]"
+            className="mt-[1.5rem] mb-[1.5rem] text-black opactity-90 md:text-[16px] mx-auto"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
             facere molestiae quasi molestias consequuntur nam blanditiis iste?

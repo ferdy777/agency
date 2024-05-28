@@ -21,7 +21,7 @@ const Home = () => {
     });
   }, []);
   return (
-    <div>
+    <div className="pt-[6rem]">
       <Hero />
       <div className="pt-[5rem] pb-[3rem]">
         <SectionHeading
@@ -40,7 +40,6 @@ const Home = () => {
       </div>
       <SupportTeam />
       <Company />
-      <Footer />
     </div>
   );
 };

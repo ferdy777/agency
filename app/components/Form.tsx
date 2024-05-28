@@ -5,7 +5,7 @@ const Form = () => {
   return (
     <div>
       <div>
-        <form className="flex flex-col items-center justify-center mx-auto pt-[5rem] pb-[3rem]">
+        <form className="flex flex-col items-center justify-center mx-auto ">
           <h2 className="text-2xl mb-3 font-bold text-center">Login</h2>
           <label className="block text-sm font-medium text-gray-700">
             Name

@@ -15,7 +15,7 @@ const Mobilenav = ({ nav, closeNav, handleClick }: props) => {
   const navOpenStyle = nav ? "translate-x-0" : "translate-x-[-100%]";
   return (
     <div
-      className={`transform transition-all ${navOpenStyle} duration-500 fixed top-0 left-0 z-[200] h-[100vh] right-0 bottom-0 bg-[#6d096b]`}
+      className={`transform transition-all ${navOpenStyle} duration-500 fixed flex items-center  justify-center top-0 left-0 z-[2100] h-[100vh] w-[100%] lg:w-[80%] right-0 bottom-0 bg-[#6d096b]`}
     >
       <XMarkIcon
         onClick={closeNav}

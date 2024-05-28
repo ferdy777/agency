@@ -3,7 +3,7 @@ import SignForm from "../components/SignForm";
 
 const page = () => {
   return (
-    <div>
+    <div className="pt-[5rem]">
       <SignForm />
     </div>
   );
