@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading/SectionHeading";
 
 const About = () => {
   return (
-    <div className="pt-[5rem] pb-[3rem]">
+    <div className="xl:mt-[9rem]">
       <SectionHeading
         headingPrimary="All About Us"
         headingMini="Deal for your business"

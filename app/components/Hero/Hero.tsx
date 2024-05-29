@@ -3,6 +3,7 @@ import ButtonBlue from "../Button/ButtonBlue";
 import ButtonRed from "../Button/ButtonRed";
 import HeroImg from "@/public/images/hero.svg";
 import Image from "next/image";
+import Link from "next/link";
 const Hero = () => {
   return (
     <div className="h-[70vh] lg:h-[88vh] md:h-[80vh] sm-[75vh] flex elex-col justify-center items-center">
@@ -28,15 +29,15 @@ const Hero = () => {
             data-aos-delay="400"
             className="flex items-center space-x-4 md:space-x-6"
           >
-            <ButtonBlue text="Get Started" />
-            <ButtonRed text="Explore Features" />
+            <Link href="/signup">
+              <ButtonBlue text="Get started" />
+            </Link>
+            <Link href="/form">
+              <ButtonRed text="Features" />
+            </Link>
           </div>
         </div>
-        <div
-          data-aos="fade-left"
-          data-aos-delay="600"
-          className="hidden col-span-3 sm:block"
-        >
+        <div data-aos="fade-left" data-aos-delay="600" className="col-span-3 ">
           <Image src={HeroImg} alt="Heroimg " />
         </div>
       </div>

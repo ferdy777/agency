@@ -5,7 +5,7 @@ import SectionHeading from "../components/SectionHeading/SectionHeading";
 const Services = () => {
   return (
     <div>
-      <div className="pt-[5rem] pb-[3rem]">
+      <div className="xl:mt-[9rem]">
         <SectionHeading
           headingPrimary="Here are the services we render"
           headingMini="what we offer"

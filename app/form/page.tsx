@@ -3,7 +3,7 @@ import Form from "../components/Form";
 
 const page = () => {
   return (
-    <div className="pt-[7rem]">
+    <div className="pt-[6rem]">
       <Form />
     </div>
   );
