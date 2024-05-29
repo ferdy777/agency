@@ -29,7 +29,6 @@ const SignUpForm = () => {
           type="email"
           id="email"
           name="email"
-          value={formData.email}
           onChange={handleChange}
           className="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
           required
@@ -43,7 +42,6 @@ const SignUpForm = () => {
           type="password"
           id="password"
           name="password"
-          value={formData.password}
           onChange={handleChange}
           className="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
           required
@@ -57,7 +55,6 @@ const SignUpForm = () => {
           type="password"
           id="confirmPassword"
           name="confirmPassword"
-          value={formData.confirmPassword}
           onChange={handleChange}
           className="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
           required
