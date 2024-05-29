@@ -3,7 +3,7 @@ import Customer from "../components/Customer";
 
 const page = () => {
   return (
-    <div>
+    <div className="mt-[3rem]">
       <Customer />
     </div>
   );

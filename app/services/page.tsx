@@ -3,7 +3,7 @@ import Services from "../components/Services";
 
 const page = () => {
   return (
-    <div>
+    <div className="mt-[7rem]">
       <Services />
     </div>
   );

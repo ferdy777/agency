@@ -1,37 +1,67 @@
-import React from "react";
+"use client";
+
+import { useState } from "react";
 import ButtonBlue from "./Button/ButtonBlue";
 
 const Form = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log(formData);
+  };
+
   return (
-    <div>
-      <div>
-        <form className="flex flex-col items-center justify-center mx-auto ">
-          <h2 className="text-2xl mb-3 font-bold text-center">Login</h2>
-          <label className="block text-sm font-medium text-gray-700">
-            Name
-          </label>
-          <input
-            className="mt-1 block text-center max-w-full p-2 border outline-none border-gray-300 rounded-md shadow-sm"
-            type="text"
-            placeholder="Enter your name"
-            required
-          />
-          <label className="block text-sm font-medium text-gray-700">
-            Password
-          </label>
-          <input
-            className="mt-1 block text-center max-w-full mb-2 p-2 border outline-none border-gray-300 rounded-md shadow-sm"
-            type="text"
-            placeholder="Enter your password "
-            required
-          />
-          {/* <button className="py-2 px-20 text-center pl-2 border border-red-500 bg-blue-600 rounded mt-3 mx-auto">
-            login
-          </button> */}
-          <ButtonBlue text="Login" />
-        </form>
+    <form
+      className="max-w-md mx-auto"
+      onSubmit={handleSubmit}
+      // method="POST"
+      // action="https://getform.io/f/lbkmzdpb"
+    >
+      <div className="mb-4">
+        <label htmlFor="email" className="block text-gray-700">
+          Email Address
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          className="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+          required
+        />
       </div>
-    </div>
+      <div className="mb-6">
+        <label htmlFor="password" className="block text-gray-700">
+          Password
+        </label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          value={formData.password}
+          onChange={handleChange}
+          className="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+          required
+        />
+      </div>
+      <div className="text-center">
+        <ButtonBlue text="Log in" />
+      </div>
+    </form>
   );
 };
 
